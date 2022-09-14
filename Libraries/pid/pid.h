@@ -31,6 +31,6 @@ PID_t *PID_Get_Target_Controller_Object();
 
 // ===============================================================================
 
-float PID_Get(float current_value);
+float PID_Get_Value(float current_value);
 
 #endif
