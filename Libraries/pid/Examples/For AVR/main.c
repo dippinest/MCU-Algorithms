@@ -56,7 +56,7 @@ int main(void)
 		UART_Data_Transmit(&(pid.target_value), sizeof(float));
 		UART_Data_Transmit(&real_temp, sizeof(float));
 		
-		OUTPUT_POWER = PID_Get(real_temp);
+		OUTPUT_POWER = PID_Get_Value(real_temp);
 		
 		// if temperature is higher than the set value, turn off the load
 		// (PID calculations are performed to establish the integral value)
