@@ -13,7 +13,7 @@ ___
 
 - Algorithms for filtering data
 
-- Checksum Calculation Algorithms (CRC)
+- Checksum calculation algorithms (CRC)
 
 - Implementation of the PID controller algorithm
 
