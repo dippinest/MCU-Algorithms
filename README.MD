@@ -1,4 +1,4 @@
-# MCU Cross-Platform Algorgitms
+# MCU Algorgitms
 ___
 
 #### A set of libraries of cross-platform algorithms optimized for small resources of microcontrollers.<br><br>
