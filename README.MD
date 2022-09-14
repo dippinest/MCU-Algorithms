@@ -25,6 +25,6 @@ ___
 
 ___
 
-#### As examples of the algorithms, the implementations of test programs for PC (MSVC), as well as for AVR microcontrollers (avr-gcc compiler) are given.
+#### As examples of the algorithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
 
 ___
