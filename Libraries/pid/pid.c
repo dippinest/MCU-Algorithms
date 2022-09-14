@@ -39,7 +39,7 @@ PID_t *PID_Get_Target_Controller_Object()
 
 // ===============================================================================
 
-float PID_Get(float current_value)
+float PID_Get_Value(float current_value)
 {
 	float PID = 0.0; // PID = (p * error) + (i * integral * dt) + (d * (E - last_error) / dt)
 	
