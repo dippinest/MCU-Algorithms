@@ -1,4 +1,4 @@
-# MCU Algorgitms
+# MCU Algorhitms
 ___
 
 #### A set of libraries of cross-platform algorithms optimized for small resources of microcontrollers and not only.<br><br>
@@ -9,22 +9,22 @@ ___
 
 #### Among them:
 
-- Algorithms for working with numeric data and converting numbers of various types into a string representation
+- Algorhithms for working with numeric data and converting numbers of various types into a string representation
 
-- Algorithms for filtering data
+- Algorhithms for filtering data
 
-- Checksum calculation algorithms (CRC)
+- Checksum calculation algorhithms (CRC)
 
-- Implementation of the PID controller algorithm
+- Implementation of the PID controller algorhithm
 
-- Implementation of an algorithm for calculating the temperature of an NTC thermistor
+- Implementation of an algorhithm for calculating the temperature of an NTC thermistor
 
-- Cryptographic algorithms
+- Cryptographic algorhithms
 
 - as well as overrides of C/C++ data types and some macros that simplify working with data
 
 ___
 
-#### As examples of the algorithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
+#### As examples of the algorhithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
 
 ___
