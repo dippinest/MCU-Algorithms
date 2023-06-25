@@ -46,7 +46,7 @@ typedef uint64_t   natural64;
 typedef float      float32;
 typedef float      f32;
 typedef double     float64;
-typedefdouble     f64;
+typedef double     f64;
 
 // defining a boolean data type
 typedef _Bool      boolean;
