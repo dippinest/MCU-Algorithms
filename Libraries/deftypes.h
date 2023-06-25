@@ -55,16 +55,12 @@ typedef _Bool      logical;
 // minimum and maximum values of certain 8-bit data types
 #define MIN_BYTE_VAL       0
 #define MAX_BYTE_VAL       UCHAR_MAX
-#define MIN_SBYTE_VAL      SCHAR_MIN
-#define MAX_SBYTE_VAL      SCHAR_MAX
 
 #define MIN_INT_8_VAL      SCHAR_MIN
 #define MAX_INT_8_VAL      SCHAR_MAX
 #define MIN_UINT_8_VAL     0
 #define MAX_UINT_8_VAL     UCHAR_MAX
 
-#define MIN_S8_VAL         SCHAR_MIN
-#define MAX_S8_VAL         SCHAR_MAX
 #define MIN_U8_VAL         0
 #define MAX_U8_VAL         UCHAR_MAX
 
@@ -82,8 +78,6 @@ typedef _Bool      logical;
 #define MIN_UINT16_VAL     0
 #define MAX_UINT16_VAL     USHRT_MAX
 
-#define MIN_S16_VAL        SHRT_MIN
-#define MAX_S16_VAL        SHRT_MAX
 #define MIN_U16_VAL        0
 #define MAX_U16_VAL        USHRT_MAX
 
@@ -101,8 +95,6 @@ typedef _Bool      logical;
 #define MIN_UINT32_VAL     0
 #define MAX_UINT32_VAL     UINT_MAX
 
-#define MIN_S32_VAL        INT_MIN
-#define MAX_S32_VAL        INT_MAX
 #define MIN_U32_VAL        0
 #define MAX_U32_VAL        UINT_MAX
 
@@ -120,8 +112,6 @@ typedef _Bool      logical;
 #define MIN_UINT64_VAL     0ULL
 #define MAX_UINT64_VAL     ULLONG_MAX
 
-#define MIN_S64_VAL        LLONG_MIN
-#define MAX_S64_VAL        LLONG_MAX
 #define MIN_U64_VAL        0ULL
 #define MAX_U64_VAL        ULLONG_MAX
 
