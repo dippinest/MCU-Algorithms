@@ -42,7 +42,7 @@ typedef int64_t    i64;
 typedef uint64_t   u64;
 typedef uint64_t   natural64;
 
-// definitions of the float real type
+// definitions of the float and double real type
 typedef float      float32;
 typedef float      f32;
 typedef double     float64;
