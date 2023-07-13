@@ -31,7 +31,7 @@ int main(void)
 	ADC_Initialize(0, ADC_PRESCALER_128, ADC_VREF_SOURCE_EXTERNAL_AVCC, true);
 	
 	// maximum value of the ADC voltage multiplied by 100 (to shift the decimal point to the end to the right)
-	const int32_t PFIXPOINT_MAX_VOLTAGE = 481; // (4.81 * 100) * 10000
+	const int32_t PFIXPOINT_MAX_VOLTAGE = 481; // (4.81 * 100)
 	
 	I2C_Initialize(100000);
 	
