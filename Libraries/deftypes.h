@@ -7,8 +7,6 @@
 #include <stdbool.h>
 
 // definitions of 8-bit types
-typedef uint8_t    byte;
-typedef int8_t     sbyte;
 typedef int8_t     int8;
 typedef uint8_t    uint8;
 typedef int8_t     i8;
@@ -16,8 +14,6 @@ typedef uint8_t    u8;
 typedef uint8_t    natural8;
 
 // definitions of 16-bit types
-typedef uint16_t   word;
-typedef int16_t    sword;
 typedef int16_t    int16;
 typedef uint16_t   uint16;
 typedef int16_t    i16;
@@ -25,8 +21,6 @@ typedef uint16_t   u16;
 typedef uint16_t   natural16;
 
 // definitions of 32-bit types
-typedef uint32_t   dword;
-typedef int32_t    sdword;
 typedef int32_t    int32;
 typedef uint32_t   uint32;
 typedef int32_t    i32;
@@ -34,8 +28,6 @@ typedef uint32_t   u32;
 typedef uint32_t   natural32;
 
 // definitions of 64-bit types
-typedef uint64_t   qword;
-typedef int64_t    sqword;
 typedef int64_t    int64;
 typedef uint64_t   uint64;
 typedef int64_t    i64;
@@ -53,8 +45,6 @@ typedef _Bool      boolean;
 typedef _Bool      logical;
 
 // minimum and maximum values of certain 8-bit data types
-#define MIN_BYTE_VAL       0
-#define MAX_BYTE_VAL       UCHAR_MAX
 
 #define MIN_INT_8_VAL      SCHAR_MIN
 #define MAX_INT_8_VAL      SCHAR_MAX
@@ -68,10 +58,6 @@ typedef _Bool      logical;
 #define MAX_NATURAL8_VAL   UCHAR_MAX
 
 // minimum and maximum values of certain 16-bit data types
-#define MIN_WORD_VAL       0
-#define MAX_WORD_VAL       USHRT_MAX
-#define MIN_SWORD_VAL      SHRT_MIN
-#define MAX_SWORD_VAL      SHRT_MAX
 
 #define MIN_INT16_VAL      SHRT_MIN
 #define MAX_INT16_VAL      SHRT_MAX
@@ -85,10 +71,6 @@ typedef _Bool      logical;
 #define MAX_NATURAL16_VAL  USHRT_MAX
 
 // minimum and maximum values of certain 32-bit data types
-#define MIN_DWORD_VAL      0
-#define MAX_DWORD_VAL      UINT_MAX
-#define MIN_SDWORD_VAL     INT_MIN
-#define MAX_SDWORD_VAL     INT_MAX
 
 #define MIN_INT32_VAL      INT_MIN
 #define MAX_INT32_VAL      INT_MAX
@@ -102,10 +84,6 @@ typedef _Bool      logical;
 #define MAX_NATURAL32_VAL  UINT_MAX
 
 // minimum and maximum values of certain 64-bit data types
-#define MIN_QWORD_VAL      0ULL
-#define MAX_QWORD_VAL      ULLONG_MAX
-#define MIN_SQWORD_VAL     LLONG_MIN
-#define MAX_SQWORD_VAL     LLONG_MAX
 
 #define MIN_INT64_VAL      LLONG_MIN
 #define MAX_INT64_VAL      LLONG_MAX
