@@ -52,8 +52,6 @@ typedef uint32_t   natural32;
 
 #ifdef NUM_64BIT_SUPPORT
 
-#define NUM_64BIT_SUPPORT
-
 // definitions of 64-bit types
 
 typedef int64_t    int64;
@@ -121,8 +119,6 @@ typedef _Bool      logical;
 
 
 #ifdef NUM_64BIT_SUPPORT
-
-#define NUM_64BIT_SUPPORT
 
 // minimum and maximum values of certain 64-bit data types
 
