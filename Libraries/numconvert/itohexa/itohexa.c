@@ -6,7 +6,9 @@ static char *_string_buffer = NULL; // buffer for string
 static const char _HEX_DIGIT_CHARS[] =
 	{ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
 
+
 // ===============================================================================
+
 
 void ITOHEXA_Set_String_Buffer(char *string_buffer_ptr)
 {
@@ -26,7 +28,9 @@ void ITOHEXA_Delete_String_Buffer_To_Dynamic_Memory()
 	_string_buffer = NULL;
 }
 
+
 // ===============================================================================
+
 
 char *ITOHEXA_8bitNum_To_HexString(uint8_t val, bool is_lower_case)
 {
@@ -91,6 +95,9 @@ char *ITOHEXA_32bitNum_To_HexString(uint32_t val, bool is_lower_case)
 	return _string_buffer;
 }
 
+
+#ifdef NUM_64BIT_SUPPORT
+
 char *ITOHEXA_64bitNum_To_HexString(uint64_t val, bool is_lower_case)
 {
 	for (int8_t i = 15; i >= 0; --i)
@@ -111,3 +118,8 @@ char *ITOHEXA_64bitNum_To_HexString(uint64_t val, bool is_lower_case)
 	
 	return _string_buffer;
 }
+
+
+#endif
+
+
