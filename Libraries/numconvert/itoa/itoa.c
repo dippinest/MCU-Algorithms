@@ -9,6 +9,7 @@ static char    _decimal_char_separator  = '.'; // default
 
 // ===============================================================================
 
+
 void ITOA_Set_String_Buffer(char *string_buffer_ptr)
 {
 	_string_buffer = string_buffer_ptr;
@@ -27,7 +28,9 @@ void ITOA_Delete_String_Buffer_To_Dynamic_Memory()
 	_string_buffer = NULL;
 }
 
+
 // ===============================================================================
+
 
 void ITOA_Set_Empty_Char_Symbol(const char empty_char)
 {
@@ -54,7 +57,9 @@ char ITOA_Get_Decimal_Char_Separator()
 	return _decimal_char_separator;
 }
 
+
 // ===============================================================================
+
 
 char *ITOA_UInt8_To_String_Without_Alignment(uint8_t val, int8_t num_of_chars)
 {
@@ -98,6 +103,9 @@ char *ITOA_UInt32_To_String_Without_Alignment(uint32_t val, int8_t num_of_chars)
 	return _string_buffer;
 }
 
+
+#ifdef NUM_64BIT_SUPPORT
+
 char *ITOA_UInt64_To_String_Without_Alignment(uint64_t val, int8_t num_of_chars)
 {
 	_string_buffer[num_of_chars] = '\0';
@@ -112,7 +120,11 @@ char *ITOA_UInt64_To_String_Without_Alignment(uint64_t val, int8_t num_of_chars)
 	return _string_buffer;
 }
 
+#endif
+
+
 // ===============================================================================
+
 
 char *ITOA_Int8_To_String(int8_t val, int8_t num_of_chars)
 {
@@ -372,6 +384,9 @@ char *ITOA_UInt32_To_String(uint32_t val, int8_t num_of_chars)
 	return _string_buffer;
 }
 
+
+#ifdef NUM_64BIT_SUPPORT
+
 char *ITOA_Int64_To_String(int64_t val, int8_t num_of_chars)
 {
 	#include <limits.h>
@@ -473,7 +488,11 @@ char *ITOA_UInt64_To_String(uint64_t val, int8_t num_of_chars)
 	return _string_buffer;
 }
 
+#endif
+
+
 // ===============================================================================
+
 
 char* ITOA_Float_To_String(float val, int8_t num_int_digits, int8_t num_fract_digits)
 {
@@ -594,3 +613,5 @@ char* ITOA_Float_To_String(float val, int8_t num_int_digits, int8_t num_fract_di
 
 	return _string_buffer;
 }
+
+
