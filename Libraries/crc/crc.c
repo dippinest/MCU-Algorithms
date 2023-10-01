@@ -169,6 +169,9 @@ uint32_t CRC32_Get(void *data, uint16_t data_size, uint32_t polynomial, uint32_t
 	return initial ^ xor_out;
 }
 
+
+#ifdef NUM_64BIT_SUPPORT
+
 uint64_t CRC64_Get(void* data, uint16_t data_size, uint64_t polynomial, uint64_t initial, bool refin, bool refout, uint64_t xor_out)
 {
 	register uint8_t i;
@@ -224,3 +227,8 @@ uint64_t CRC64_Get(void* data, uint16_t data_size, uint64_t polynomial, uint64_t
 
 	return initial ^ xor_out;
 }
+
+
+#endif
+
+
