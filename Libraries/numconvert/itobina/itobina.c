@@ -3,7 +3,9 @@
 
 static char *_string_buffer = NULL; // buffer for string
 
+
 // ===============================================================================
+
 
 void ITOBINA_Set_String_Buffer(char *string_buffer_ptr)
 {
@@ -23,7 +25,9 @@ void ITOBINA_Delete_String_Buffer_To_Dynamic_Memory()
 	_string_buffer = NULL;
 }
 
+
 // ===============================================================================
+
 
 char *ITOBINA_8bitNum_To_BinString(uint8_t val)
 {
@@ -88,6 +92,9 @@ char *ITOBINA_32bitNum_To_BinString(uint32_t val)
 	return _string_buffer;
 }
 
+
+#ifdef NUM_64BIT_SUPPORT
+
 char *ITOBINA_64bitNum_To_BinString(uint64_t val)
 {
 	uint8_t i = 0;
@@ -108,3 +115,7 @@ char *ITOBINA_64bitNum_To_BinString(uint64_t val)
 	
 	return _string_buffer;
 }
+
+#endif
+
+
