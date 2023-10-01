@@ -1,4 +1,18 @@
 
+
+// ===============================================================================
+//
+// Файл с различными макроопределениями, помогающими при работе с разными
+// числовыми типами данных
+//
+// -------------------------------------------------------------------------------
+//
+// A file with various macro definitions that help when working with
+// different numeric data types
+//
+// ===============================================================================
+
+
 #ifndef DEFTYPES_H_
 #define DEFTYPES_H_
 
@@ -6,43 +20,60 @@
 #include <limits.h>
 #include <stdbool.h>
 
+
 // definitions of 8-bit types
+
 typedef int8_t     int8;
 typedef uint8_t    uint8;
 typedef int8_t     i8;
 typedef uint8_t    u8;
 typedef uint8_t    natural8;
 
+
 // definitions of 16-bit types
+
 typedef int16_t    int16;
-typedef uint16_t   uint16;
+typedef uint16_t   uint16;
+
 typedef int16_t    i16;
 typedef uint16_t   u16;
 typedef uint16_t   natural16;
 
+
 // definitions of 32-bit types
+
 typedef int32_t    int32;
 typedef uint32_t   uint32;
 typedef int32_t    i32;
 typedef uint32_t   u32;
 typedef uint32_t   natural32;
 
+
+
+#ifdef NUM_64BIT_SUPPORT
+
 // definitions of 64-bit types
+
 typedef int64_t    int64;
 typedef uint64_t   uint64;
 typedef int64_t    i64;
 typedef uint64_t   u64;
 typedef uint64_t   natural64;
 
+#endif
+
+
 // definitions of the float and double real type
+
 typedef float      float32;
 typedef float      f32;
-typedef double     float64;
-typedef double     f64;
+
 
 // defining a boolean data type
+
 typedef _Bool      boolean;
 typedef _Bool      logical;
+
 
 // minimum and maximum values of certain 8-bit data types
 
@@ -57,6 +88,7 @@ typedef _Bool      logical;
 #define MIN_NATURAL8_VAL   0
 #define MAX_NATURAL8_VAL   UCHAR_MAX
 
+
 // minimum and maximum values of certain 16-bit data types
 
 #define MIN_INT16_VAL      SHRT_MIN
@@ -69,6 +101,7 @@ typedef _Bool      logical;
 
 #define MIN_NATURAL16_VAL  0
 #define MAX_NATURAL16_VAL  USHRT_MAX
+
 
 // minimum and maximum values of certain 32-bit data types
 
@@ -83,6 +116,10 @@ typedef _Bool      logical;
 #define MIN_NATURAL32_VAL  0
 #define MAX_NATURAL32_VAL  UINT_MAX
 
+
+
+#ifdef NUM_64BIT_SUPPORT
+
 // minimum and maximum values of certain 64-bit data types
 
 #define MIN_INT64_VAL      LLONG_MIN
@@ -96,7 +133,12 @@ typedef _Bool      logical;
 #define MIN_NATURAL64_VAL  0ULL
 #define MAX_NATURAL64_VAL  ULLONG_MAX
 
+#endif
+
+
+
 // minimum and maximum values of the FLOAT type (float)
+
 #define MIN_FLOAT32_VAL    3.4E-38
 #define MAX_FLOAT32_VAL    3.4E+38
 
@@ -142,20 +184,23 @@ typedef _Bool      logical;
 
 // -------------------- defining macros for manipulating bits --------------------
 
-/* macros for setting a single bit */
+// macros for setting a single bit
 #define SETBIT_HIGH(val, pos) (val |=  (1 << pos))
 #define SETBIT_LOW(val, pos)  (val &= ~(1 << pos))
 
-/* macro for getting a single bit */
+// macro for getting a single bit
 #define GETBIT(val, pos) (val & (1 << pos))
 
-/* macros for exchanging variable values */
+// macros for exchanging variable values
 #define TSWAP(A, B, val_type) val_type tmp = A; A = B; B = tmp;
 #define XORSWAP(A, B) (B ^= (A ^= B)); A ^= B;
 #define FXORSWAP(A, B) (*((uint32_t*)&B) ^= (*((uint32_t*)&A) ^= *((uint32_t*)&B))); *((uint32_t*)&A) ^= *((uint32_t*)&B);
 
-/* macros for cyclic bit shifting */
+// macros for cyclic bit shifting
 #define ROTL(val, pos, val_type) (val << pos) | (val >> (sizeof(val_type) * 8 - pos))
 #define ROTR(val, pos, val_type) (val >> pos) | (val << (sizeof(val_type) * 8 - pos))
 
+
 #endif
+
+
