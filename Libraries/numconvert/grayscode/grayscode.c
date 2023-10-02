@@ -1,6 +1,7 @@
 
 #include "grayscode.h"
 
+
 uint8_t GRAYSCODE_UInt8_To_UInt8Grayscode(uint8_t num)
 {
 	return num ^ (num >> 1);
@@ -52,6 +53,9 @@ uint32_t GRAYSCODE_UInt32Grayscode_To_UInt32(uint32_t gray_code)
 	return n;
 }
 
+
+#ifdef NUM_64BIT_SUPPORT
+
 uint64_t GRAYSCODE_UInt64_To_UInt64Grayscode(uint64_t num)
 {
 	return num ^ (num >> 1);
@@ -68,3 +72,7 @@ uint64_t GRAYSCODE_UInt64Grayscode_To_UInt64(uint64_t gray_code)
 
 	return n;
 }
+
+#endif
+
+
