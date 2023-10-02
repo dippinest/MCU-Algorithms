@@ -1,3 +1,20 @@
+
+
+// ===============================================================================
+//
+// Эта библиотека, реализует криптографический алгоритм алгоритм XTEA2.
+// Функции библиотеки позволяют использовать различные режимы
+// шифрования данных: ECB, CBC, PCBC, CFB и OFB
+//
+// -------------------------------------------------------------------------------
+//
+// This library implements the XTEA2 cryptographic algorithm.
+// The library functions allow you to use various data
+// encryption modes: ECB, CBC, PCBC, CFB and OFB
+//
+// ===============================================================================
+
+
 #ifndef XTEA2_H_
 #define XTEA2_H_
 
@@ -24,3 +41,5 @@ uint32_t XTEA2_Encrypt_OFB(const void *init_vector_128bit, void *data, const uin
 uint32_t XTEA2_Decrypt_OFB(const void *init_vector_128bit, void *data, const uint32_t data_size, const void *key_128bit, uint8_t num_of_rounds);
 
 #endif
+
+
