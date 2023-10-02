@@ -1,3 +1,4 @@
+
 #include "xtea1.h"
 
 static uint32_t _rol(uint32_t base, uint8_t shift)
@@ -278,3 +279,5 @@ uint32_t XTEA1_Decrypt_OFB(const void *init_vector_64bit, void *data, const uint
 {
 	return XTEA1_Encrypt_OFB(init_vector_64bit, data, data_size, key_128bit, num_of_rounds);
 }
+
+
