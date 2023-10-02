@@ -1,8 +1,24 @@
 
+
+// ===============================================================================
+//
+// Библиотека для преобразования различных целых числовых типов данных
+// в их двоично-десятичное представление и обратно
+//
+// -------------------------------------------------------------------------------
+//
+// Library for converting various integer data types
+// to their binary-decimal representation and back
+//
+// ===============================================================================
+
+
 #ifndef BCDCODE_H_
 #define BCDCODE_H_
 
+
 #include <stdint.h>
+
 
 uint8_t BCDCODE_UInt8_To_UInt8BCD(uint8_t num);
 
@@ -16,8 +32,15 @@ uint32_t BCDCODE_UInt32_To_UInt32BCD(uint32_t num);
 
 uint32_t BCDCODE_UInt32BCD_To_UInt32(uint32_t bcd_code);
 
+
+#ifdef NUM_64BIT_SUPPORT
+
 uint64_t BCDCODE_UInt64_To_UInt64BCD(uint64_t num);
 
 uint64_t BCDCODE_UInt64BCD_To_UInt64(uint64_t bcd_code);
 
 #endif
+
+#endif
+
+
