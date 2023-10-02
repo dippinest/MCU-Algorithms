@@ -32,7 +32,7 @@ int main(void)
 	while (1)
 	{
 		// working with fixed-type numbers
-		int32_t PFIXPOINT_voltage = (((FIXPOINT_MAX_VOLTAGE * 10000) / 1023) * ADC_Get_Value_10bit()) / 10000;
+		int32_t FIXPOINT_voltage = (((FIXPOINT_MAX_VOLTAGE * 10000) / 1023) * ADC_Get_Value_10bit()) / 10000;
 		
 		HD44780_I2C_Clear_String_By_Pos(2, 10, 19); HD44780_I2C_Set_Cursor_Pos(2, 10);
 		HD44780_I2C_Print_String(FIXPoint_Int32PFP_To_String(FIXPOINT_voltage, 1, 2));
