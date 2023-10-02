@@ -34,7 +34,7 @@ int main(void)
 		
 		UART_String_Transmit("i = ");         print_bits(i);
 		UART_String_Transmit("; i_grays = "); print_bits(i_grays);
-		UART_String_Transmit("; i_new = "); print_bits(i_new);
+		UART_String_Transmit("; i_new = ");   print_bits(i_new);
 		
 		UART_NEW_LINE;
 		
@@ -43,3 +43,5 @@ int main(void)
 		_delay_ms(1000);
 	}
 }
+
+
