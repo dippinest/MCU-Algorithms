@@ -53,6 +53,7 @@ float MATHX_Constraint_Float(float val, float min, float max);
 
 // ===============================================================================
 
+
 int32_t MATHX_Scaling_Int32(int32_t val, int32_t input_min_val, int32_t input_max_val, int32_t output_min_val, int32_t output_max_val);
 
 uint32_t MATHX_Scaling_UInt32(uint32_t val, uint32_t input_min_val, uint32_t input_max_val, uint32_t output_min_val, uint32_t output_max_val);
