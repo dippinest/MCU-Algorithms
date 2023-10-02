@@ -1,6 +1,6 @@
 
-#include "mathx.h"
 
+#include "mathx.h"
 
 int16_t MATHX_Constraint_Int16(int16_t val, int16_t min, int16_t max)
 {
@@ -116,23 +116,6 @@ float MATHX_Constraint_Float(float val, float min, float max)
 
 
 // ===============================================================================
-
-
-int16_t MATHX_Scaling_Int16(int16_t val, int16_t input_min_val, int16_t input_max_val, int16_t output_min_val, int16_t output_max_val)
-{
-	int16_t new_val = ((val - input_min_val) * (output_max_val - output_min_val)) /
-	(input_max_val - input_min_val) + output_min_val;
-
-	return new_val;
-}
-
-uint16_t MATHX_Scaling_UInt16(uint16_t val, uint16_t input_min_val, uint16_t input_max_val, uint16_t output_min_val, uint16_t output_max_val)
-{
-	uint16_t new_val = ((val - input_min_val) * (output_max_val - output_min_val)) /
-	(input_max_val - input_min_val) + output_min_val;
-
-	return new_val;
-}
 
 int32_t MATHX_Scaling_Int32(int32_t val, int32_t input_min_val, int32_t input_max_val, int32_t output_min_val, int32_t output_max_val)
 {
