@@ -37,6 +37,9 @@ uint32_t BCDCODE_UInt32BCD_To_UInt32(uint32_t bcd_code)
 	return num + BCDCODE_UInt16BCD_To_UInt16(bcd_code);
 }
 
+
+#ifdef NUM_64BIT_SUPPORT
+
 uint64_t BCDCODE_UInt64_To_UInt64BCD(uint64_t num)
 {
 	uint64_t bcd_code = (uint64_t)BCDCODE_UInt32_To_UInt32BCD(num / 100000000ULL) << 32;
@@ -48,3 +51,7 @@ uint64_t BCDCODE_UInt64BCD_To_UInt64(uint64_t bcd_code)
 	uint64_t num = (uint64_t)BCDCODE_UInt32BCD_To_UInt32(bcd_code >> 32) * 100000000ULL;
 	return num + BCDCODE_UInt32BCD_To_UInt32(bcd_code);
 }
+
+#endif
+
+
