@@ -16,7 +16,7 @@ int main(void)
 	ADC_Initialize(0, ADC_PRESCALER_128, ADC_VREF_SOURCE_EXTERNAL_AVCC, true);
 	
 	// maximum value of the ADC voltage multiplied by 100 (to shift the decimal point to the end to the right)
-	const int32_t PFIXPOINT_MAX_VOLTAGE = 481; // (4.81 * 100)
+	const int32_t FIXPOINT_MAX_VOLTAGE = 481; // (4.81 * 100)
 	
 	I2C_Initialize(100000);
 	
@@ -32,10 +32,10 @@ int main(void)
 	while (1)
 	{
 		// working with fixed-type numbers
-		int32_t PFIXPOINT_voltage = (((PFIXPOINT_MAX_VOLTAGE * 10000) / 1023) * ADC_Get_Value_10bit()) / 10000;
+		int32_t PFIXPOINT_voltage = (((FIXPOINT_MAX_VOLTAGE * 10000) / 1023) * ADC_Get_Value_10bit()) / 10000;
 		
 		HD44780_I2C_Clear_String_By_Pos(2, 10, 19); HD44780_I2C_Set_Cursor_Pos(2, 10);
-		HD44780_I2C_Print_String(FIXPoint_Int32PFP_To_String(PFIXPOINT_voltage, 1, 2));
+		HD44780_I2C_Print_String(FIXPoint_Int32PFP_To_String(FIXPOINT_voltage, 1, 2));
 		
 		_delay_ms(200);
 	}
