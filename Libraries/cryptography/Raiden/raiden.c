@@ -1,3 +1,4 @@
+
 #include "raiden.h"
 
 static void _RAIDEN_64bit_Block_Encrypt(void *_64bit_block, const void *key_128bit)
@@ -296,3 +297,5 @@ uint32_t RAIDEN_Decrypt_OFB(const void *init_vector_64bit, void *data, const uin
 {
 	return RAIDEN_Encrypt_OFB(init_vector_64bit, data, data_size, key_128bit);
 }
+
+
