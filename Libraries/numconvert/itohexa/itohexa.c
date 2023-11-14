@@ -22,7 +22,7 @@ char *ITOHEXA_Set_String_Buffer_To_Dynamic_Memory(const uint8_t string_buffer_si
 	return _string_buffer;
 }
 
-void ITOHEXA_Delete_String_Buffer_To_Dynamic_Memory()
+void ITOHEXA_Delete_String_Buffer_From_Dynamic_Memory()
 {
 	free(_string_buffer);
 	_string_buffer = NULL;
