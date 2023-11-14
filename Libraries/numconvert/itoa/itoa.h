@@ -27,7 +27,7 @@ void ITOA_Set_String_Buffer(char *string_buffer_ptr);
 
 char *ITOA_Set_String_Buffer_To_Dynamic_Memory(const uint8_t string_buffer_size);
 
-void ITOA_Delete_String_Buffer_To_Dynamic_Memory();
+void ITOA_Delete_String_Buffer_From_Dynamic_Memory();
 
 
 // ===============================================================================
