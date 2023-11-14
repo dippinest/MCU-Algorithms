@@ -22,7 +22,7 @@ char *ITOA_Set_String_Buffer_To_Dynamic_Memory(const uint8_t string_buffer_size)
 	return _string_buffer;
 }
 
-void ITOA_Delete_String_Buffer_To_Dynamic_Memory()
+void ITOA_Delete_String_Buffer_From_Dynamic_Memory()
 {
 	free(_string_buffer);
 	_string_buffer = NULL;
