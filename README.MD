@@ -1,9 +1,16 @@
+
+
+
 # MCU Algorhitms
 ___
 
-A set of libraries of cross-platform algorithms optimized for small resources of microcontrollers and not only.<br><br>
+#### Набор кросс-платформенных библиотек различных алгоритмов, оптимизированных под малые ресурсы микроконтроллеров.
 
-<img src="/resources/logo.png" alt="MCU Cross-Platform Algorgitms logo"/>
+#### A set of libraries of cross-platform algorithms optimized for small resources of microcontrollers.
+
+___
+
+<img src="/resources/logo.jpg" alt="Algorithm logo"/>
 
 ___
 
@@ -22,9 +29,6 @@ ___
 - Cryptographic algorhithms
 
 - as well as overrides of C/C++ data types and some macros that simplify working with data
-
 ___
-
-#### As examples of the algorhithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
 
 ___
