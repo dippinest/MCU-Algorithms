@@ -30,6 +30,6 @@ ___
 
 - as well as overrides of C/C++ data types and some macros that simplify working with data
 ___
-## As examples of the algorhithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
+##### As examples of the algorhithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
 
 ___
