@@ -28,7 +28,7 @@ ___
 
 - Криптографические алгоритмы семейства TEA
 
-- ...и другие алгоритмы
+- ..и другие.
 
 ##### В качестве примеров алгоритмов приведены реализации тестовых программ для микроконтроллеров AVR (компилятор avr-gcc).
 
@@ -48,6 +48,6 @@ ___
 
 - Cryptographic algorithms of the TEA series
 
-- ...and other algorithms
+- ..etc.
 
 ##### As examples of the algorhithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
