@@ -14,13 +14,13 @@
 //
 inline void TIMER0_PWM_Initialize()
 {
-	DDRD  |= (1 << 7); // PD7 - PWM output
+	DDRD    |= (1 << 7); // PD7 - PWM output
 	
-	TCCR2 |= (1 << WGM20)
-	      |  (1 << WGM21) // Fast PWM
-		  |  (1 << COM20)
-		  |  (1 << COM21)
-		  |  (1 << CS20); // not div
+	TCCR2   |= (1 << WGM20)
+		|  (1 << WGM21) // Fast PWM
+		|  (1 << COM20)
+		|  (1 << COM21)
+		|  (1 << CS20); // not div
 		  
 	OCR2 = 0;
 }
