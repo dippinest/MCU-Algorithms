@@ -26,8 +26,7 @@
 //
 //	+Vcc o----[постоянный резистор]---(точка подключения АЦП)---[NTC терморезистор]----o GND
 //
-//	В точке АЦП подключения происходит измерение значения АЦП, результат которого передаётся
-//  в функцию NTC_Get_Temperature_To_Kelvin(uint16_t adc_value)
+//	В точке АЦП подключения происходит измерение значения АЦП
 //
 // -------------------------------------------------------------------------------
 //
@@ -55,8 +54,7 @@
 //
 //	+Vcc o----[serial resistor]---(ADC point)---[NTC thermistor]----o GND
 //
-//	At the ADC connection point, the ADC value is measured, the result
-//  of which is passed to the NTC_Get_Temperature_To_Kelvin(uint16_t adc_value) function
+//	At the ADC connection point the ADC value is measured
 //
 // ===============================================================================
 
@@ -67,7 +65,17 @@
 #include "ntc_configuration.h"
 
 
-float NTC_Get_Temperature_To_Kelvin(uint16_t adc_value);
+float NTC_Get_Temperature_To_Kelvin
+(
+  uint16_t adc_value,
+	uint16_t adc_max_val,
+	float    U_ref,
+	float    U_gen,
+	float    R_serial,
+	float    A_coef,
+	float    B_coef,
+	float    C_coef
+);
 
 inline float NTC_Convert_Temperature_Kelvin_To_Celsius(float temp_to_kelvin)
 {
