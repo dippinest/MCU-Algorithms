@@ -9,6 +9,52 @@
 
 static char str_buf[16];
 
+
+
+// коэффициенты в этом примере рассчитаны для
+// терморезистора MF52 NTC-MF52AT 100 кОм
+// -------------------------------------------------------------------------------
+// the coefficients in this example are calculated
+// for the MF52 NTC-MF52AT 100 kOhm thermistor
+
+
+// коэффициенты A, B и C
+// -------------------------------------------------------------------------------
+// A, B and C coefficients
+//
+#define A_COEF       0.0006660824105f
+#define B_COEF       0.0002239282041f
+#define C_COEF       0.0000000719951882f
+
+
+// сопротивление постоянного резистора в Омах (измеряется мультиметром)
+// -------------------------------------------------------------------------------
+// resistance of a constant resistor in Ohms (measured by a multimeter)
+//
+#define R_SERIAL     68700
+
+
+// напряжение питания измерительной цепи (в Вольтах)
+// -------------------------------------------------------------------------------
+// supply voltage of the measuring circuit (in Volts)
+//
+#define U_GEN        4.81f
+
+
+// опорное напряжение АЦП (в Вольтах)
+// -------------------------------------------------------------------------------
+// ADC reference voltage (in Volts)
+//
+#define U_REF        4.81f
+
+
+// максимальное цифровое значение АЦП
+// -------------------------------------------------------------------------------
+// maximum digital value of the ADC
+//
+#define ADC_MAX_VAL  1023 // max value 10-bit ADC for AVR
+
+
 int main(void)
 {
 	ADC_Initialize(0, ADC_PRESCALER_128, ADC_VREF_SOURCE_EXTERNAL_AVCC, true);
@@ -17,12 +63,12 @@ int main(void)
 	
 	ITOA_Set_String_Buffer(str_buf);
 	
-	
 	float temp_to_kelvin, temp_to_celsius, temp_to_fahrenheit;
 	
 	while (1)
 	{
-		temp_to_kelvin     = NTC_Get_Temperature_To_Kelvin(ADC_Get_Value_10bit());
+		temp_to_kelvin     = NTC_Get_Temperature_To_Kelvin(ADC_Get_Value_10bit(), ADC_MAX_VAL, U_REF, U_GEN, R_SERIAL, A_COEF, B_COEF, C_COEF);
+
 		temp_to_celsius    = NTC_Convert_Temperature_Kelvin_To_Celsius(temp_to_kelvin);
 		temp_to_fahrenheit = NTC_Convert_Temperature_Kelvin_To_Fahrenheit(temp_to_kelvin);
 		
