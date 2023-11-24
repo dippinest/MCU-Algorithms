@@ -10,7 +10,7 @@ ___
 
 ___
 
-<img src="/resources/logo.jpg" alt="Algorithm logo"/>
+<img src="/resources/logo.png" alt="Algorithm logo"/>
 
 ___
 
