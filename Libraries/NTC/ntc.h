@@ -67,7 +67,7 @@
 
 float NTC_Get_Temperature_To_Kelvin
 (
-  uint16_t adc_value,
+	uint16_t adc_value,
 	uint16_t adc_max_val,
 	float    U_ref,
 	float    U_gen,
