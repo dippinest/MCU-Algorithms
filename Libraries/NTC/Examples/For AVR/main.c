@@ -22,30 +22,30 @@ static char str_buf[16];
 // -------------------------------------------------------------------------------
 // A, B and C coefficients
 //
-#define A_COEF       0.0006660824105f
-#define B_COEF       0.0002239282041f
-#define C_COEF       0.0000000719951882f
+#define A_COEF    1.044253909E-3
+#define B_COEF    1.807648763E-4
+#define C_COEF    1.498221745E-7
 
 
 // сопротивление постоянного резистора в Омах (измеряется мультиметром)
 // -------------------------------------------------------------------------------
 // resistance of a constant resistor in Ohms (measured by a multimeter)
 //
-#define R_SERIAL     68700
+#define R_SERIAL     97500
 
 
 // напряжение питания измерительной цепи (в Вольтах)
 // -------------------------------------------------------------------------------
 // supply voltage of the measuring circuit (in Volts)
 //
-#define U_GEN        4.81f
+#define U_GEN        5.07f
 
 
 // опорное напряжение АЦП (в Вольтах)
 // -------------------------------------------------------------------------------
 // ADC reference voltage (in Volts)
 //
-#define U_REF        4.81f
+#define U_REF        5.07f
 
 
 // максимальное цифровое значение АЦП
@@ -57,7 +57,7 @@ static char str_buf[16];
 
 int main(void)
 {
-	ADC_Initialize(0, ADC_PRESCALER_128, ADC_VREF_SOURCE_EXTERNAL_AVCC, true);
+	ADC_Initialize(1, ADC_PRESCALER_128, ADC_VREF_SOURCE_EXTERNAL_AVCC, true);
 	
 	UART_Initialize(9600, true, false);
 	
