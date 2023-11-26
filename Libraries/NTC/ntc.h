@@ -16,8 +16,8 @@
 //
 //  Вы можете рассчитать коэффициенты A, B и C, используя решение системы
 //  линейных уравнений (https://ru.wikipedia.org/wiki/Уравнение_Стейнхарта_—_Харта)
-//  или же использую специальный калькулятор. Значения коэффициентов задаются
-//  в файле ntc_configuration.h
+//  или же использую специальный калькулятор
+//  (например, https://www.thinksrs.com/downloads/programs/therm%20calc/ntccalibrator/ntccalculator.html)
 //
 //
 //	Пожалуйста, используйте резистор и терморезистор с минимальной погрешностью параметров.
@@ -44,8 +44,8 @@
 //
 //  You can can calculate the coefficients A, B and C using the system of
 //  linear equations solution (https://en.wikipedia.org/wiki/Steinhart-Hart_equation)
-//  or using a special calculator. The values of the coefficients are set
-//  in the file ntc_configuration.h
+//  or using a special calculator
+//  (for example, https://www.thinksrs.com/downloads/programs/therm%20calc/ntccalibrator/ntccalculator.html)
 //
 //
 //	Please use a resistor and a thermistor with minimal parameter error.
