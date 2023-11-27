@@ -23,7 +23,7 @@
 
 #include <util/delay.h>
 
-#include "softpwm.h"
+#include "softpwm_inline.h"
 #include "color_transform.h"
 
 
@@ -42,7 +42,7 @@
 // -------------------------------------------------------------------------------
 // array of software PWM channels
 //
-SOFTPWM_t softpwm[SOFTPWM_NUM_OF_CHANNELS];
+SOFTPWM_Inline_t softpwm[SOFTPWM_NUM_OF_CHANNELS];
 
 
 // инициализируем таймера 2 (Timer2)
@@ -64,7 +64,7 @@ inline void TIMER2_Initialize()
 //
 ISR(TIMER2_OVF_vect)
 {
-	SOFTPWM_All_Channels_Processing(softpwm, SOFTPWM_NUM_OF_CHANNELS);
+	SOFTPWM_Inline_All_Channels_Processing(softpwm, SOFTPWM_NUM_OF_CHANNELS);
 }
 
 
@@ -79,9 +79,9 @@ int main(void)
 	//
 	DDRB |= (1 << 1) | (1 << 2) | (1 << 3);
 
-	softpwm[0] = SOFTPWM_Get_Channel_Object(T(PORTB), 1, MAX_PWM_WIDTH, MAX_PWM_WIDTH);
-	softpwm[1] = SOFTPWM_Get_Channel_Object(T(PORTB), 2, MAX_PWM_WIDTH, MAX_PWM_WIDTH);
-	softpwm[2] = SOFTPWM_Get_Channel_Object(T(PORTB), 3, MAX_PWM_WIDTH, MAX_PWM_WIDTH);
+	softpwm[0] = SOFTPWM_Inline_Get_Channel_Object(T(PORTB), 1, MAX_PWM_WIDTH, MAX_PWM_WIDTH);
+	softpwm[1] = SOFTPWM_Inline_Get_Channel_Object(T(PORTB), 2, MAX_PWM_WIDTH, MAX_PWM_WIDTH);
+	softpwm[2] = SOFTPWM_Inline_Get_Channel_Object(T(PORTB), 3, MAX_PWM_WIDTH, MAX_PWM_WIDTH);
 	
 	sei();
 	
@@ -113,9 +113,9 @@ int main(void)
 		// channel into a 4-bit value (16 gradations) by
 		// dividing by 16 (right shift by 4)
 		//
-		SOFTPWM_DUTY_CYCLE(softpwm[0]) = rgb.r >> 4;
-		SOFTPWM_DUTY_CYCLE(softpwm[1]) = rgb.g >> 4;
-		SOFTPWM_DUTY_CYCLE(softpwm[2]) = rgb.b >> 4;
+		SOFTPWM_INLINE_DUTY_CYCLE(softpwm[0]) = rgb.r >> 4;
+		SOFTPWM_INLINE_DUTY_CYCLE(softpwm[1]) = rgb.g >> 4;
+		SOFTPWM_INLINE_DUTY_CYCLE(softpwm[2]) = rgb.b >> 4;
 		
 		_delay_ms(5);
 	}
