@@ -16,7 +16,7 @@ ___
 
 #### Среди них:
 
-- Алгоритмы работы с числовыми данными и преобразования чисел различных типов в строковое представление
+- Алгоритмы работы с числовыми данными и преобразования чисел различных типов
 
 - Алгоритмы цифровой фильтрации данных
 
@@ -36,7 +36,7 @@ ___
 
 #### Among them:
 
-- Algorhithms for working with numeric data and converting numbers of various types into a string representation
+- Algorhithms for working with numeric data and converting numbers of various types
 
 - Algorhithms for digital filtering data
 
