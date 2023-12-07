@@ -35,7 +35,7 @@ int main(void)
 		int32_t FIXPOINT_voltage = (((FIXPOINT_MAX_VOLTAGE * 10000) / 1023) * ADC_Get_Value_10bit()) / 10000;
 		
 		HD44780_I2C_Clear_String_By_Pos(2, 10, 19); HD44780_I2C_Set_Cursor_Pos(2, 10);
-		HD44780_I2C_Print_String(FIXPoint_Int32PFP_To_String(FIXPOINT_voltage, 1, 2));
+		HD44780_I2C_Print_String(FIXPoint_Int32FP_To_String(FIXPOINT_voltage, 1, 2));
 		
 		_delay_ms(200);
 	}
