@@ -56,17 +56,21 @@ char FIXPoint_Get_Decimal_Char_Separator();
 // ===============================================================================
 
 
-char* FIXPoint_Int32PFP_To_String(int32_t val, int8_t num_int_digits, int8_t num_fract_digits);
+char* FIXPoint_Int16FP_To_String(int16_t val, int8_t num_int_digits, int8_t num_fract_digits);
+
+
+char* FIXPoint_Int32FP_To_String(int32_t val, int8_t num_int_digits, int8_t num_fract_digits);
 
 
 #ifdef NUM_64BIT_SUPPORT
 
 // use a 64-bit representation of numbers to get a large
 // dynamic representation of a number with a pseudo-fixed point
-char* FIXPoint_Int64PFP_To_String(int64_t val, int8_t num_int_digits, int8_t num_fract_digits);
+char* FIXPoint_Int64FP_To_String(int64_t val, int8_t num_int_digits, int8_t num_fract_digits);
 
 #endif
 
 #endif
+
 
 
