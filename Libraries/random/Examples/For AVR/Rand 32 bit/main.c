@@ -30,7 +30,7 @@ int main(void)
 	// The adc.h library from the AVR Libraries set has a corresponding
 	// function for reading the entropy value
 	//
-	Random_LCG_Set_Seed(ADC_Get_Random_Entropy_Value_16bit(0));
+	Random_Set_Seed(ADC_Get_Random_Entropy_Value_16bit(0));
 	
 	while (1)
 	{
@@ -41,7 +41,7 @@ int main(void)
 		// generating a random number of type int32_t
 		// in the range from -1_000_000_000 to (1_000_000_000 - 1)
 		//
-		int32_t random_number = Random_LCG_Get_Int32_Value(-1000000000, 1000000000);
+		int32_t random_number = Random_Get_Int32_Value(-1000000000, 1000000000);
 		
 		UART_StringLn_Transmit(ITOA_Int32_To_String(random_number, 12));
 		
