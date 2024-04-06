@@ -68,8 +68,8 @@
 // ===============================================================================
 
 
-#ifndef FRANDOM_H_
-#define FRANDOM_H_
+#ifndef FASTRANDOM_H_
+#define FASTRANDOM_H_
 
 
 #include <stdint.h>
