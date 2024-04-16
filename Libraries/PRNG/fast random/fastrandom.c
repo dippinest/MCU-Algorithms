@@ -28,7 +28,7 @@ bool FASTRandom_Get_Bool_Value()
 
 uint16_t FASTRandom_Get_UInt16_Value(uint16_t min, uint16_t max)
 {
-	return min + (_FASTRandom_Get_Value() % (max - min));
+	return (uint16_t)(min + (_FASTRandom_Get_Value() % (max - min)));
 }
 
 int16_t FASTRandom_Get_Int16_Value(int16_t min, int16_t max)
@@ -46,7 +46,7 @@ uint32_t FASTRandom_Get_UInt32_Value(uint32_t min, uint32_t max)
 	
 	r |= FASTRandom_Get_UInt16_Value(0, 65535);
 
-	return min + (r % (max - min));
+	return (uint32_t)(min + (r % (max - min)));
 }
 
 int32_t FASTRandom_Get_Int32_Value(int32_t min, int32_t max)
