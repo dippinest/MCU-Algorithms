@@ -12,16 +12,16 @@ char buffer[16];
 
 // пример функции, генерирующей начальное значение зерна для ГПСЧ.
 // Данная функция использует 2 ячейки внутренней EEPROM для хранения
-// начального значения зерна, и его модификации.
+// начального значения зерна и его модификации.
 //
 // Подобный подход можно использовать, когда нет возможности
 // использовать источник энтропии
 // (например, в микроконтроллере ATtiny2313, где нет АЦП).
 //
 // -------------------------------------------------------------------------------
-// an example of a function that generates the initial grain value
-// for the RNG. This function uses 2 cells of the internal EEPROM
-// to store the initial value of the grain, and its modification.
+// an example of a function that generates the initial seed value
+// for the PRNG. This function uses 2 cells of the internal EEPROM
+// to store the initial value of the seed and its modification.
 //
 // A similar approach can be used when it is not possible
 // to use an entropy source (for example, in the ATtiny2313
