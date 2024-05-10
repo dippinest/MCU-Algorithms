@@ -29,15 +29,26 @@ typedef int8_t     i8;
 typedef uint8_t    u8;
 typedef uint8_t    natural8;
 
+typedef int8_t     INT8;
+typedef uint8_t    UINT8;
+typedef int8_t     I8;
+typedef uint8_t    U8;
+typedef uint8_t    NATURAL8;
+
 
 // definitions of 16-bit types
 
 typedef int16_t    int16;
 typedef uint16_t   uint16;
-
 typedef int16_t    i16;
 typedef uint16_t   u16;
 typedef uint16_t   natural16;
+
+typedef int16_t    INT16;
+typedef uint16_t   UINT16;
+typedef int16_t    I16;
+typedef uint16_t   U16;
+typedef uint16_t   NATURAL16;
 
 
 // definitions of 32-bit types
@@ -47,6 +58,12 @@ typedef uint32_t   uint32;
 typedef int32_t    i32;
 typedef uint32_t   u32;
 typedef uint32_t   natural32;
+
+typedef int32_t    INT32;
+typedef uint32_t   UINT32;
+typedef int32_t    I32;
+typedef uint32_t   U32;
+typedef uint32_t   NATURAL32;
 
 
 
@@ -60,6 +77,12 @@ typedef int64_t    i64;
 typedef uint64_t   u64;
 typedef uint64_t   natural64;
 
+typedef int64_t    INT64;
+typedef uint64_t   UINT64;
+typedef int64_t    I64;
+typedef uint64_t   U64;
+typedef uint64_t   NATURAL64;
+
 #endif
 
 
@@ -68,11 +91,19 @@ typedef uint64_t   natural64;
 typedef float      float32;
 typedef float      f32;
 
+typedef float      FLOAT32;
+typedef float      F32;
+
 
 // defining a boolean data type
 
 typedef _Bool      boolean;
 typedef _Bool      logical;
+
+typedef _Bool      BOOL;
+
+typedef _Bool      BOOLEAN;
+typedef _Bool      LOGICAL;
 
 
 // minimum and maximum values of certain 8-bit data types
@@ -138,6 +169,9 @@ typedef _Bool      logical;
 
 
 // minimum and maximum values of the FLOAT type (float)
+
+#define MIN_F32_VAL        3.4E-38
+#define MAX_F32_VAL        3.4E+38
 
 #define MIN_FLOAT32_VAL    3.4E-38
 #define MAX_FLOAT32_VAL    3.4E+38
