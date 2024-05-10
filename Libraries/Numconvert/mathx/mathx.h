@@ -7,11 +7,11 @@
 // На данный момент библиотека содержит следующие функции:
 //
 //
-//      MATHX_Get_Min_X : возвращает меньшее из двух чисел
+//      MATHX_Get_Min_X   : возвращает меньшее из двух чисел
 //
-//      MATHX_Get_Max_X : возвращает большее из двух чисел
+//      MATHX_Get_Max_X   : возвращает большее из двух чисел
 //
-//      MATHX_Get_Abs_X : возвращает модуль числа
+//      MATHX_Get_Abs_X   : возвращает модуль числа
 //
 //		MATHX_Constrain_X : возвращает число с учётом области допустимых значений
 //
@@ -24,11 +24,11 @@
 //
 // At the moment, the library contains the following functions:
 //
-//      MATHX_Get_Min_X : returns a smaller of the two numbers
+//      MATHX_Get_Min_X   : returns a smaller of the two numbers
 //
-//      MATHX_Get_Max_X : returns a larger of two numbers
+//      MATHX_Get_Max_X   : returns a larger of two numbers
 //
-//      MATHX_Get_Abs_X : returns a absolute value
+//      MATHX_Get_Abs_X   : returns a absolute value
 //
 //		MATHX_Constrain_X : returns a number taking into account the range of acceptable values
 //
