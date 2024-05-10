@@ -13,9 +13,9 @@
 //
 //      MATHX_Get_Abs_X   : возвращает модуль числа
 //
-//		MATHX_Constrain_X : возвращает число с учётом области допустимых значений
+//      MATHX_Constrain_X : возвращает число с учётом области допустимых значений
 //
-//		MATHX_Scaling_X   : возвращает линейно-масштабированное значение
+//      MATHX_Scaling_X   : возвращает линейно-масштабированное значение
 //
 //
 // -------------------------------------------------------------------------------
@@ -30,9 +30,9 @@
 //
 //      MATHX_Get_Abs_X   : returns a absolute value
 //
-//		MATHX_Constrain_X : returns a number taking into account the range of acceptable values
+//      MATHX_Constrain_X : returns a number taking into account the range of acceptable values
 //
-//		MATHX_Scaling_X   : returns a linearly scaled value
+//      MATHX_Scaling_X   : returns a linearly scaled value
 //
 //
 // ===============================================================================
