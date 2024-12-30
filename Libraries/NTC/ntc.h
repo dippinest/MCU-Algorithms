@@ -6,7 +6,7 @@
 //  Стейнхарта-Харта позволяет вычислять температуру в градусах Кельвина
 //
 //
-//  Температура вычисляется согласно уравнению Стейнхарта-Харта:
+//  Температура вычисляется согласно упрощённому уравнению Стейнхарта-Харта:
 //
 //  T = 1 / (A + B*ln(R) + C*[ln(R)]^3), где:
 //
@@ -16,7 +16,7 @@
 //
 //  Вы можете рассчитать коэффициенты A, B и C, используя решение системы
 //  линейных уравнений (https://ru.wikipedia.org/wiki/Уравнение_Стейнхарта_—_Харта)
-//  или же использую специальный калькулятор
+//  или же используя специальный калькулятор
 //  (например, https://www.thinksrs.com/downloads/programs/therm%20calc/ntccalibrator/ntccalculator.html)
 //
 //
@@ -34,7 +34,7 @@
 //  it allows you to calculate the temperature in degrees Kelvin
 //
 //
-//  The temperature is calculated using the Steinhart-Hart equation:
+//  The temperature is calculated according to the simplified Steinhart-Hart equation:
 //
 //  T = 1 / (A + B*ln(R) + C*[ln(R)]^3), where:
 //
