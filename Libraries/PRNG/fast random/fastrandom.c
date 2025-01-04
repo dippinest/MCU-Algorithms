@@ -1,22 +1,22 @@
 
 #include "fastrandom.h"
 
-static uint16_t Seed = 0x0000;
+static uint16_t _seed = 0x0000;
 
 // ===============================================================================
 
 void FASTRandom_Set_Seed(uint16_t seed)
 {
-	Seed = seed;
+	_seed = seed;
 }
 
 uint16_t _FASTRandom_Get_Value()
 {
-	Seed += _FASTRANDOM_MAGIC_VALUE;
+	_seed += _FASTRANDOM_MAGIC_VALUE;
 
-	Seed = _FASTRANDOM_ROTR(Seed, (Seed & 0b111), uint16_t);
+	_seed = _FASTRANDOM_ROTR(_seed, 5, uint16_t);
 
-	return Seed;
+	return _seed;
 }
 
 // ===============================================================================
