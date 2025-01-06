@@ -16,6 +16,7 @@ MAPRNG_t MAPRNG_Get_Object(uint8_t init_addr, uint16_t max_addr, uint8_t(*read_b
 	return maprng;
 }
 
+// ===============================================================================
 
 uint8_t MAPRNG_Get_8Bit_Value(MAPRNG_t* maprng)
 {
