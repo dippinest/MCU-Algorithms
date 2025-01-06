@@ -124,9 +124,7 @@ uint32_t MAPRNG_Get_32Bit_Value(MAPRNG_t* maprng)
 	return res;
 }
 
-
 // ===============================================================================
-
 
 bool MAPRNG_Get_Bool_Value(MAPRNG_t* maprng)
 {
