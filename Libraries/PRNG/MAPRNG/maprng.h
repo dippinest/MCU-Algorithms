@@ -58,9 +58,7 @@ uint16_t MAPRNG_Get_16Bit_Value(MAPRNG_t* maprng);
 
 uint32_t MAPRNG_Get_32Bit_Value(MAPRNG_t* maprng);
 
-
 // ===============================================================================
-
 
 bool MAPRNG_Get_Bool_Value(MAPRNG_t* maprng);
 
