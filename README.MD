@@ -20,6 +20,8 @@ ___
 
 - Алгоритмы цифровой фильтрации данных
 
+- Алгоритмы генераторов псевдослучайных чисел (ГПСЧ)
+
 - Алгоритмы вычисления контрольной суммы (CRC)
 
 - Реализация алгоритма PID-регулятора
@@ -39,6 +41,8 @@ ___
 - Algorhithms for working with numeric data and converting numbers of various types
 
 - Algorhithms for digital filtering data
+
+- Algorithms of pseudo-random number generators (PRNG)
 
 - Checksum calculation algorhithms (CRC)
 
