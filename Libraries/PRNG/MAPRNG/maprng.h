@@ -7,7 +7,7 @@
 //
 // Функции библиотеки позволяют получать псевдослучайные числа в диапазоне
 // 8, 16 и 32 бита (а также числа в установленном диапазоне), используя
-// изменяемый массив с адресами от 0x00 до max_eeprom_addr,
+// изменяемый массив с адресами от 0x00 до max_addr,
 // который задаётся в параметрах функции. Основная ячейка памяти также
 // задаётся в параметрах функции.
 // В качестве изменяемого массива можно использовать участок любого типа памяти
@@ -21,7 +21,7 @@
 //
 // The library functions allow you to get pseudorandom numbers in the range
 // of 8, 16, and 32 bits (as well as numbers in the specified range) using
-// a mutable array with addresses from 0x00 to max_eeprom_addr, which is set
+// a mutable array with addresses from 0x00 to max_addr, which is set
 // in the function parameters. The main memory location is also set in the
 // function parameters.
 //
