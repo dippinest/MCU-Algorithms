@@ -158,6 +158,8 @@ typedef _Bool      LOGICAL;
 #define MIN_UINT64_VAL     0ULL
 #define MAX_UINT64_VAL     ULLONG_MAX
 
+#define MIN_I64_VAL        LLONG_MIN
+#define MAX_I64_VAL        LLONG_MAX
 #define MIN_U64_VAL        0ULL
 #define MAX_U64_VAL        ULLONG_MAX
 
