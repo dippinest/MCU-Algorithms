@@ -25,10 +25,6 @@ float Filters_Get_Rand_Noise_Float(float amp)
 	return noise;
 }
 
-
-// ===============================================================================
-
-
 int16_t Filters_Get_Splash_Int16(int16_t amp, uint16_t frequency)
 {
 	uint16_t rand_val1 = rand(), rand_val2 = 0;
@@ -63,10 +59,6 @@ float Filters_Get_Splash_Float(float amp, uint16_t frequency)
 	
 	return rand_val2;
 }
-
-
-// ===============================================================================
-
 
 float Filters_Get_Gaussian_Noise(float amp)
 {
