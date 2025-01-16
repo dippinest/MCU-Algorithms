@@ -46,9 +46,9 @@ int main(void)
 	// Инициализация внешней EEPROM
 	// -------------------------------------------------------------------------------
 	// Initializing an external EEPROM
-	EEPROMI2C_t eeprom = EEPROMI2C_Get_Device_Object(EEPROM_CHIP_ADDR, EEPROM_MAX_MEM_ADDR, EEPROM_PAGE_SIZE);
+	EEPROMI2C_t eeprom = EEPROMI2C_Get_Object(EEPROM_CHIP_ADDR, EEPROM_MAX_MEM_ADDR, EEPROM_PAGE_SIZE);
 	
-	EEPROMI2C_Set_Target_Device_Object(&eeprom);
+	EEPROMI2C_Set_Target_Object(&eeprom);
 	
 	
 	
