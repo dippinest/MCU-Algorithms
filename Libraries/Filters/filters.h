@@ -27,9 +27,9 @@
 
 int16_t Filters_Get_Rand_Noise_Int16(int16_t amp);
 
-int16_t Filters_Get_Splash_Int16(int16_t amp, uint16_t frequency);
-
 float Filters_Get_Rand_Noise_Float(float amp);
+
+int16_t Filters_Get_Splash_Int16(int16_t amp, uint16_t frequency);
 
 float Filters_Get_Splash_Float(float amp, uint16_t frequency);
 
