@@ -1,7 +1,6 @@
 
 #include <string.h>
 
-#define F_CPU 16000000UL
 #include "uart.h"
 #include "xtea3.h"
 
