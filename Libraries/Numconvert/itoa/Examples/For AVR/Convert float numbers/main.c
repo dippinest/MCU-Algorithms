@@ -7,7 +7,6 @@
 // while the similar code with the "sprintf" function takes 3540 bytes.
 // Memory savings are (3540 - 2066) = 1474 bytes
 
-#define F_CPU 16000000UL
 #include <util/delay.h>
 //#include <stdio.h>
 
