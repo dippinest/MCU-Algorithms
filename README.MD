@@ -24,8 +24,6 @@ ___
 
 - Алгоритмы вычисления контрольной суммы (CRC)
 
-- Реализация алгоритма PID-регулятора
-
 - Реализация алгоритма расчета температуры с помощью NTC терморезистора
 
 - Криптографические алгоритмы семейства TEA
@@ -45,8 +43,6 @@ ___
 - Algorithms of pseudo-random number generators (PRNG)
 
 - Checksum calculation algorhithms (CRC)
-
-- Implementation of the PID controller algorhithm
 
 - Implementation of the temperature calculation algorithm using an NTC thermistor
 
