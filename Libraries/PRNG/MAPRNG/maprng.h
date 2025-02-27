@@ -41,7 +41,7 @@ typedef struct
 	uint16_t init_addr;
 	uint16_t max_addr;
 
-	uint8_t(*read_byte)(uint16_t addr);
+	uint8_t (*read_byte)(uint16_t addr);
 	void    (*write_byte)(uint16_t addr, uint8_t b);
 
 } MAPRNG_t;
