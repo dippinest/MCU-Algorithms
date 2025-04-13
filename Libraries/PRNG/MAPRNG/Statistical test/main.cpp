@@ -5,10 +5,10 @@
 
 
 // Инициализация участка памяти внутренней RAM (массива) для MAPRNG
-// размером 32 байта
+// размером 16 байта
 // -------------------------------------------------------------------------------
-// Initialization of an internal RAM (array) memory segment for a 32-byte MAPRNG
-const size_t MAPRNG_MUTABLE_ARRAY_SIZE = 32;
+// Initialization of an internal RAM (array) memory segment for a 16-byte MAPRNG
+const size_t MAPRNG_MUTABLE_ARRAY_SIZE = 16;
 
 uint8_t MAPRNG_MUTABLE_ARRAY[MAPRNG_MUTABLE_ARRAY_SIZE];
 
@@ -28,7 +28,7 @@ uint8_t read_byte(uint16_t addr)
 }
 
 
-const size_t NUM_OF_VALUES = 10000;
+const size_t NUM_OF_VALUES = 20000;
 
 int main(void)
 {
