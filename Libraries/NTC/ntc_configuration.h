@@ -2,8 +2,6 @@
 #ifndef NTC_CONFIGURATION_H_
 #define NTC_CONFIGURATION_H_
 
-#include <math.h>
-#include <stdint.h>
 
 // По умолчанию коэффициенты в этом файле рассчитаны для
 // терморезистора MF52 NTC-MF52AT 100 кОм
