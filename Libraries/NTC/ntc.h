@@ -62,6 +62,10 @@
 #ifndef NTC_H_
 #define NTC_H_
 
+
+#include <math.h>
+#include <stdint.h>
+
 #include "ntc_configuration.h"
 
 
