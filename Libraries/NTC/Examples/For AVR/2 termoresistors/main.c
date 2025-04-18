@@ -1,7 +1,7 @@
 
 #include <util/delay.h>
 
-#include "itoa.h"
+#include "ftoa.h"
 #include "adc.h"
 #include "ntc.h"
 #include "uart.h"
@@ -60,7 +60,7 @@ int main(void)
 	
 	UART_Initialize(9600, true, false);
 	
-	ITOA_Set_String_Buffer(str_buf);
+	FTOA_Set_String_Buffer(str_buf);
 	
 	
 	// переменные для хранения температуры
@@ -98,15 +98,15 @@ int main(void)
 		temp_to_fahrenheit_2 = NTC_Convert_Temperature_Kelvin_To_Fahrenheit(temp_to_kelvin_2);
 		
 		
-		UART_String_Transmit("1 Temp (*K) "); UART_StringLn_Transmit(ITOA_Float_To_String(temp_to_kelvin_1,     3, 1));
-		UART_String_Transmit("1 Temp (*C) "); UART_StringLn_Transmit(ITOA_Float_To_String(temp_to_celsius_1,    3, 1));
-		UART_String_Transmit("1 Temp (*F) "); UART_StringLn_Transmit(ITOA_Float_To_String(temp_to_fahrenheit_1, 3, 1));
+		UART_String_Transmit("1 Temp (*K) "); UART_StringLn_Transmit(FTOA_Float32_To_String(temp_to_kelvin_1,     3, 1));
+		UART_String_Transmit("1 Temp (*C) "); UART_StringLn_Transmit(FTOA_Float32_To_String(temp_to_celsius_1,    3, 1));
+		UART_String_Transmit("1 Temp (*F) "); UART_StringLn_Transmit(FTOA_Float32_To_String(temp_to_fahrenheit_1, 3, 1));
 		UART_NEW_LINE;
 		
 		
-		UART_String_Transmit("2 Temp (*K) "); UART_StringLn_Transmit(ITOA_Float_To_String(temp_to_kelvin_2,     3, 1));
-		UART_String_Transmit("2 Temp (*C) "); UART_StringLn_Transmit(ITOA_Float_To_String(temp_to_celsius_2,    3, 1));
-		UART_String_Transmit("2 Temp (*F) "); UART_StringLn_Transmit(ITOA_Float_To_String(temp_to_fahrenheit_2, 3, 1));
+		UART_String_Transmit("2 Temp (*K) "); UART_StringLn_Transmit(FTOA_Float32_To_String(temp_to_kelvin_2,     3, 1));
+		UART_String_Transmit("2 Temp (*C) "); UART_StringLn_Transmit(FTOA_Float32_To_String(temp_to_celsius_2,    3, 1));
+		UART_String_Transmit("2 Temp (*F) "); UART_StringLn_Transmit(FTOA_Float32_To_String(temp_to_fahrenheit_2, 3, 1));
 		UART_NEW_LINE;
 		
 		
