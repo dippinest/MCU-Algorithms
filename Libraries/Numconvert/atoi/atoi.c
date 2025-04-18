@@ -20,7 +20,7 @@ int8_t ATOI_String_To_Int8(char* string, uint8_t max_string_len)
 		++i;
 	}
 
-	int8_t int_sign = 1;
+	int8_t sign = 1;
 
 	if (string[i] == '+')
 	{
@@ -29,7 +29,7 @@ int8_t ATOI_String_To_Int8(char* string, uint8_t max_string_len)
 
 	if (string[i] == '-')
 	{
-		int_sign = -1;
+		sign = -1;
 
 		++i;
 	}
@@ -48,7 +48,7 @@ int8_t ATOI_String_To_Int8(char* string, uint8_t max_string_len)
 	}
 
 
-	return int_sign * n;
+	return sign * n;
 }
 
 
@@ -100,7 +100,7 @@ int16_t ATOI_String_To_Int16(char* string, uint8_t max_string_len)
 		++i;
 	}
 
-	int8_t int_sign = 1;
+	int8_t sign = 1;
 
 	if (string[i] == '+')
 	{
@@ -109,7 +109,7 @@ int16_t ATOI_String_To_Int16(char* string, uint8_t max_string_len)
 
 	if (string[i] == '-')
 	{
-		int_sign = -1;
+		sign = -1;
 
 		++i;
 	}
@@ -128,7 +128,7 @@ int16_t ATOI_String_To_Int16(char* string, uint8_t max_string_len)
 	}
 
 
-	return int_sign * n;
+	return sign * n;
 }
 
 
@@ -180,7 +180,7 @@ int32_t ATOI_String_To_Int32(char* string, uint8_t max_string_len)
 		++i;
 	}
 
-	int8_t int_sign = 1;
+	int8_t sign = 1;
 
 	if (string[i] == '+')
 	{
@@ -189,7 +189,7 @@ int32_t ATOI_String_To_Int32(char* string, uint8_t max_string_len)
 
 	if (string[i] == '-')
 	{
-		int_sign = -1;
+		sign = -1;
 
 		++i;
 	}
@@ -208,7 +208,7 @@ int32_t ATOI_String_To_Int32(char* string, uint8_t max_string_len)
 	}
 
 
-	return int_sign * n;
+	return sign * n;
 }
 
 
@@ -264,7 +264,7 @@ int64_t ATOI_String_To_Int64(char* string, uint8_t max_string_len)
 		++i;
 	}
 
-	int8_t int_sign = 1;
+	int8_t sign = 1;
 
 	if (string[i] == '+')
 	{
@@ -273,7 +273,7 @@ int64_t ATOI_String_To_Int64(char* string, uint8_t max_string_len)
 
 	if (string[i] == '-')
 	{
-		int_sign = -1;
+		sign = -1;
 
 		++i;
 	}
@@ -292,7 +292,7 @@ int64_t ATOI_String_To_Int64(char* string, uint8_t max_string_len)
 	}
 
 
-	return int_sign * n;
+	return sign * n;
 }
 
 
