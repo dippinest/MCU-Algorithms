@@ -3,7 +3,6 @@
 #include "mathx.h"
 
 
-
 int8_t MATHX_Get_Min_Int8(int8_t x1, int8_t x2)
 {
 	if (x1 <= x2)
