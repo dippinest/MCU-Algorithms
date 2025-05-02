@@ -7,6 +7,11 @@
 
 float ATOF_String_To_Float32(char* string, uint8_t max_string_len)
 {
+	if (string == NULL || max_string_len == 0)
+	{
+		return 0.0;
+	)
+	
 	float n = 0.0, pow = 1.0;
 
 	uint8_t i = 0;
