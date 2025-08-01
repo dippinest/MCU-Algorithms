@@ -40,7 +40,7 @@ int main(void)
 	// -------------------------------------------------------------------------------
 	// Initialization of the PRNG. The address of the initial working cell is 0x0000.
 	// The range of working addresses is from 0x0000 to 0x0020 (MAPRNG_MUTABLE_ARRAY_SIZE)
-	MAPRNG_t maprng = MAPRNG_Create_Object(0x0000, MAPRNG_MUTABLE_ARRAY_SIZE, read_byte, write_byte);
+	MAPRNG_t maprng = MAPRNG_Create_Object(0x0000, 0x0000, MAPRNG_MUTABLE_ARRAY_SIZE, read_byte, write_byte);
 	
 	while (1)
 	{
