@@ -3,14 +3,15 @@
 #include "maprng.h"
 
 
-MAPRNG_t MAPRNG_Create_Object(uint16_t init_addr, uint16_t max_addr, uint8_t(*read_byte)(uint16_t addr), void (*write_byte)(uint16_t addr, uint8_t b))
+MAPRNG_t MAPRNG_Create_Object(uint8_t init_value, uint16_t init_addr, uint16_t max_addr, uint8_t(*read_byte)(uint16_t addr), void (*write_byte)(uint16_t addr, uint8_t b))
 {
 	MAPRNG_t maprng;
 
-	maprng.init_addr = init_addr;
-	maprng.max_addr = max_addr;
+	maprng.last_value = init_value;
+	maprng.init_addr  = init_addr;
+	maprng.max_addr   = max_addr;
 
-	maprng.read_byte = read_byte;
+	maprng.read_byte  = read_byte;
 	maprng.write_byte = write_byte;
 
 	return maprng;
@@ -32,33 +33,15 @@ uint8_t MAPRNG_Get_8Bit_Value(MAPRNG_t* maprng)
 
 	uint8_t a = maprng->read_byte(maprng->init_addr);
 
+	a ^= maprng->last_value;
+
 	addr_ptr = (a ^ (maprng->init_addr)) % (maprng->max_addr);
 
 
 	uint8_t b = maprng->read_byte(addr_ptr);
-	
-	
-	uint8_t res;
 
 
-	if (a == b)
-	{
-		res = maprng->read_byte(a % (maprng->max_addr)) ^ a;
-
-		if (res == 0xFF)
-		{
-			res = a ^ b;
-		}
-	}
-	else
-	{
-		res = a ^ b;
-
-		if (res == 0xFF)
-		{
-			res = maprng->read_byte(a % (maprng->max_addr)) ^ a;
-		}
-	}
+	uint8_t res = maprng->read_byte(a % (maprng->max_addr)) ^ (a + b);
 
 
 	uint8_t temp;
@@ -67,12 +50,7 @@ uint8_t MAPRNG_Get_8Bit_Value(MAPRNG_t* maprng)
 	{
 		temp = maprng->read_byte((addr_ptr + b) % (maprng->max_addr));
 
-		temp += a;
-
-		if (temp == 0)
-		{
-			temp = 0xFF;
-		}
+		temp ^= a;
 
 		addr_ptr = (a + (maprng->init_addr)) % (maprng->max_addr);
 
@@ -82,18 +60,13 @@ uint8_t MAPRNG_Get_8Bit_Value(MAPRNG_t* maprng)
 
 		temp = maprng->read_byte(maprng->init_addr);
 
-		temp ^= res;
+		temp ^= maprng->last_value;
 	}
 	else
 	{
 		temp = maprng->read_byte((addr_ptr + a) % (maprng->max_addr));
 
-		temp ^= res;
-
-		if (temp == 0)
-		{
-			temp = 0xFF;
-		}
+		temp ^= b;
 
 		addr_ptr = (a ^ (maprng->init_addr)) % (maprng->max_addr);
 
@@ -103,12 +76,7 @@ uint8_t MAPRNG_Get_8Bit_Value(MAPRNG_t* maprng)
 
 		temp = maprng->read_byte(maprng->init_addr);
 
-		temp += b;
-	}
-
-	if (temp == 0)
-	{
-		temp = 0xFF;
+		temp += res;
 	}
 
 
@@ -117,6 +85,7 @@ uint8_t MAPRNG_Get_8Bit_Value(MAPRNG_t* maprng)
 	++(maprng->init_addr);
 
 
+	maprng->last_value ^= (res ^ temp + 1);
 
 	return res;
 }
