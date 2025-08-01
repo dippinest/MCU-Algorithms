@@ -85,7 +85,7 @@ uint8_t MAPRNG_Get_8Bit_Value(MAPRNG_t* maprng)
 	++(maprng->init_addr);
 
 
-	maprng->last_value ^= (res ^ temp + 1);
+	maprng->last_value ^= ((res ^ temp) + 1);
 
 	return res;
 }
