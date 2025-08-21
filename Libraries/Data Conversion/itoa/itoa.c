@@ -364,10 +364,11 @@ char *ITOA_UInt32_To_String(uint32_t val, int8_t num_of_chars)
 
 #ifdef NUM_64BIT_SUPPORT
 
+#include <limits.h>
+
+
 char *ITOA_Int64_To_String(int64_t val, int8_t num_of_chars)
 {
-	#include <limits.h>
-
 	_string_buffer[num_of_chars] = '\0';
 
 	if (val == LLONG_MIN)
@@ -466,6 +467,7 @@ char *ITOA_UInt64_To_String(uint64_t val, int8_t num_of_chars)
 }
 
 #endif
+
 
 
 
