@@ -28,7 +28,7 @@ ___
 
 - Криптографические алгоритмы
 
-- ..и другие.
+- ...и другие.
 
 ##### В качестве примеров алгоритмов приведены реализации тестовых программ для микроконтроллеров AVR (компилятор avr-gcc).
 
@@ -48,7 +48,8 @@ ___
 
 - Cryptographic algorithms
 
-- ..etc.
+- ...etc.
 
 ##### As examples of the algorhithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
+
 
