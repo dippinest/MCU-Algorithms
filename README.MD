@@ -26,7 +26,7 @@ ___
 
 - Реализация алгоритма расчета температуры с помощью NTC терморезистора
 
-- Криптографические алгоритмы семейства TEA
+- Криптографические алгоритмы
 
 - ..и другие.
 
@@ -46,8 +46,9 @@ ___
 
 - Implementation of the temperature calculation algorithm using an NTC thermistor
 
-- Cryptographic algorithms of the TEA series
+- Cryptographic algorithms
 
 - ..etc.
 
 ##### As examples of the algorhithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
+
