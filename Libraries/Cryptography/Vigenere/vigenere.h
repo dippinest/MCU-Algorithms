@@ -37,7 +37,7 @@ uint16_t Vigenere_Bytes_Encrypt(void* data, uint16_t data_size, void* key, uint1
 uint16_t Vigenere_Bytes_Decrypt(void* data, uint16_t data_size, void* key, uint16_t key_size);
 
 
-// если в случае использования данной функции длина ключа будет равна или больше длине
+// если в случае использования данной функции длина ключа будет равна или больше длины
 // шифруемого сообщения, то шифрование будет происходить по методу Вернама
 // -------------------------------------------------------------------------------
 // if, in the case of using this function, the key length is equal to or greater
@@ -48,6 +48,7 @@ uint16_t Vigenere_XOR_Bytes_Decrypt(void* data, uint16_t data_size, void* key, u
 
 
 #endif
+
 
 
 
