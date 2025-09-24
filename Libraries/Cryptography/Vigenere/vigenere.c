@@ -2,19 +2,17 @@
 #include "vigenere.h"
 
 
-uint8_t _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(void* alphabet, uint8_t alphabet_size, char b)
+static int16_t _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(void* alphabet, uint8_t alphabet_size, char b)
 {
-	uint8_t i = 0;
-
-	for (; i < alphabet_size; ++i)
+	for (int16_t i = 0; i < alphabet_size; ++i)
 	{
 		if (((char*)alphabet)[i] == b)
 		{
-			break;
+			return i;
 		}
 	}
 
-	return i;
+	return -1;
 }
 
 
@@ -22,21 +20,27 @@ uint16_t Vigenere_Standart_Encrypt(void* alphabet, uint8_t alphabet_size, void* 
 {
 	uint16_t i = 0;
 
+	uint8_t new_data_char_pos = 0;
+
+
 	for (i = 0; i < data_size; ++i)
 	{
-		uint8_t data_char_pos = _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(alphabet, alphabet_size, ((char*)data)[i]);
+		int16_t data_char_pos = _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(alphabet, alphabet_size, ((char*)data)[i]);
 
-		uint8_t key_char_pos = _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(alphabet, alphabet_size, ((char*)key)[i % key_size]);
+		int16_t key_char_pos = _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(alphabet, alphabet_size, ((char*)key)[i % key_size]);
 
 
-		uint8_t new_data_char_pos = data_char_pos + key_char_pos;
-
-		if (new_data_char_pos >= alphabet_size)
+		if (data_char_pos >= 0 && key_char_pos >= 0)
 		{
-			new_data_char_pos -= alphabet_size;
+			new_data_char_pos = data_char_pos + key_char_pos;
+
+			if (new_data_char_pos >= alphabet_size)
+			{
+				new_data_char_pos -= alphabet_size;
+			}
+
+			((char*)data)[i] = ((char*)alphabet)[new_data_char_pos];
 		}
-		
-		((char*)data)[i] = ((char*)alphabet)[new_data_char_pos];
 	}
 
 	return i;
@@ -47,21 +51,27 @@ uint16_t Vigenere_Standart_Decrypt(void* alphabet, uint8_t alphabet_size, void* 
 {
 	uint16_t i = 0;
 
+	uint8_t new_data_char_pos = 0;
+
+
 	for (i = 0; i < data_size; ++i)
 	{
-		uint8_t data_char_pos = _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(alphabet, alphabet_size, ((char*)data)[i]);
+		int16_t data_char_pos = _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(alphabet, alphabet_size, ((char*)data)[i]);
 
-		uint8_t key_char_pos = _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(alphabet, alphabet_size, ((char*)key)[i % key_size]);
+		int16_t key_char_pos = _Vigenere_Find_Index_Of_First_Occurrence_Of_A_Byte(alphabet, alphabet_size, ((char*)key)[i % key_size]);
 
 
-		uint8_t new_data_char_pos = data_char_pos - key_char_pos;
-
-		if (new_data_char_pos >= alphabet_size)
+		if (data_char_pos >= 0 && key_char_pos >= 0)
 		{
-			new_data_char_pos += alphabet_size;
-		}
+			new_data_char_pos = data_char_pos - key_char_pos;
 
-		((char*)data)[i] = ((char*)alphabet)[new_data_char_pos];
+			if (new_data_char_pos >= alphabet_size)
+			{
+				new_data_char_pos += alphabet_size;
+			}
+
+			((char*)data)[i] = ((char*)alphabet)[new_data_char_pos];
+		}
 	}
 
 	return i;
@@ -111,5 +121,8 @@ uint16_t Vigenere_XOR_Bytes_Decrypt(void* data, uint16_t data_size, void* key, u
 {
 	return Vigenere_XOR_Bytes_Encrypt(data, data_size, key, key_size);
 }
+
+
+
 
 
