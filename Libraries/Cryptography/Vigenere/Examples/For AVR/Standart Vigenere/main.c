@@ -6,12 +6,12 @@
 
 
 // алфавит, использующийся для шифра Вижинера.
-// В алфавите должны быть все символы текста, присутствующие в тексте
-// входных данных и ключе шифрования
+// Символы теста входных данных, если они отсутствуют в алфавите,
+// шифроваться не будут (аналогично с символами ключа).
 // -------------------------------------------------------------------------------
 // this alphabet used for the Vizhiner cipher.
-// The alphabet must contain all the characters of the text present
-// in the text of the input data and the encryption key
+// The characters of the input data test, if they are missing from
+// the alphabet, will not be encrypted (similar to the characters of the key).
 char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 ";
 
 
@@ -44,5 +44,6 @@ int main(void)
 	{
 	}
 }
+
 
 
