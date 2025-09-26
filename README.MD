@@ -74,9 +74,11 @@ ___
 - Реализация алгоритма расчета температуры с помощью NTC терморезистора ([ссылка](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/NTC%20Thermometer))
 
 
+___
 
 ##### В качестве примеров алгоритмов приведены реализации тестовых программ для микроконтроллеров семейства AVR (компилятор avr-gcc).
 
+___
 ___
 
 #### Among them:
@@ -137,8 +139,10 @@ ___
 - Implementation of the temperature calculation algorithm using an NTC thermistor ([link](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/NTC%20Thermometer ))
 
 
+___
 
 ##### The implementation of test programs for AVR family microcontrollers (avr-gcc compiler) is given as examples of algorithms.
+
 
 
 
