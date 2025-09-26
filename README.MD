@@ -18,58 +18,58 @@ ___
 
 - Алгоритмы работы с числовыми данными и преобразования чисел различных типов
 
-   - Функции преобразования целых чисел в строки
+   - [Функции преобразования целых чисел в ASCII строки](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itoa)
 
-   - Функции преобразования строки в целые числа
+   - [Функции преобразования ASCII строки в целые числа](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/atoi)
 
-   - Функции преобразования чисел с плавающей точкой в строки
+   - [Функции преобразования чисел с плавающей точкой в ASCII строки](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/ftoa)
 
-   - Функции преобразования строки в числа с плавающей точкой
+   - [Функции преобразования ASCII строки в числа с плавающей точкой](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/atof)
 
-   - Функции преобразования целых чисел в строку двоичного представления
+   - [Функции преобразования целых чисел в ASCII строку двоичного представления](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itobina)
 
-   - Функции преобразования целых чисел в строку шестнадцетиричного представления
+   - [Функции преобразования целых чисел в ASCII строку шестнадцетиричного представления](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itohexa)
 
-   - Функции преобразования целых чисел в двоично-десятичное представление и обратно
+   - [Функции преобразования целых чисел в двоично-десятичное представление и обратно](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/bcd)
 
-   - Функции преобразования чисел в код Грея и обратно
+   - [Функции преобразования чисел в код Грея и обратно](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/grayscode)
 
-   - Функции работы с числами с фиксированной точкой
+   - [Функции работы с числами с фиксированной точкой](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/fixpoint)
 
-   - Функции математического преобразования чисел (расширяющие стандартную библиотеку math.h)
+   - [Функции математического преобразования чисел (расширяющие стандартную библиотеку math.h)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/mathx)
 
-   - Функции конвертирования различных физических величин
+   - [Функции конвертирования различных физических величин](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/valconvert)
 
 
 - Алгоритмы генераторов псевдослучайных чисел (ГПСЧ)
 
-   - Функции для облегчения работы со стандартной функцией rand()
+   - [Функции для облегчения работы со стандартной функцией rand()](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/random)
 
-   - Облегчённый ГПСЧ на основе линейного конгруэнтного метода
+   - [Облегчённый ГПСЧ на основе линейного конгруэнтного метода](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/fast%20random)
 
-   - Библиотека генератора псевдослучайных чисел на основе изменяемого массива (MAPRNG - Mutable Array Pseudo-Random Number Generator)
+   - [Библиотека генератора псевдослучайных чисел на основе изменяемого массива (MAPRNG - Mutable Array Pseudo-Random Number Generator)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/MAPRNG)
 
 
 - Криптографические алгоритмы:
 
-   - Алгоритмы семейства TEA (TEA, XTEA, XTEA1, XTEA2, XTEA3, Raiden)
+   - [Алгоритмы семейства TEA (TEA, XTEA, XTEA1, XTEA2, XTEA3, Raiden)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Cryptography/TEA%20Series)
 
-   - Стандартный и модифицированный алгоритм Виженера
-
-
-- Алгоритмы цифровой фильтрации данных
+   - [Стандартный и модифицированный алгоритм Виженера](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Cryptography/Vigenere)
 
 
-- Алгоритмы преобразования цветового пространства RGB в HSV и обратно
+- [Алгоритмы цифровой фильтрации данных](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Digital%20Filters)
 
 
-- Алгоритмы CRT коррекции цвета, излучаемый светодиодными источниками
+- [Алгоритмы преобразования цветового пространства RGB в HSV и обратно (для LED источников)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/LED%20Colors%20Transform)
 
 
-- Алгоритмы вычисления контрольной суммы (CRC)
+- [Алгоритмы CRT коррекции цвета, излучаемый светодиодными источниками](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/LED%20Gamma%20Correction)
 
 
-- Реализация алгоритма расчета температуры с помощью NTC терморезистора
+- [Алгоритмы вычисления контрольной суммы (CRC)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/CRC%20Calculation)
+
+
+- [Реализация алгоритма расчета температуры с помощью NTC терморезистора](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/NTC%20Thermometer)
 
 
 - ...и другие.
@@ -143,6 +143,7 @@ ___
 
 
 ##### The implementation of test programs for AVR family microcontrollers (avr-gcc compiler) is given as examples of algorithms.
+
 
 
 
