@@ -52,7 +52,7 @@ ___
 
 - Криптографические алгоритмы:
 
-   - Алгоритмы семейства TEA
+   - Алгоритмы семейства TEA (TEA, XTEA, XTEA1, XTEA2, XTEA3, Raiden)
 
    - Стандартный и модифицированный алгоритм Виженера
 
@@ -118,7 +118,7 @@ ___
 
 - Cryptographic algorithms:
 
-   - TEA family algorithms
+   - TEA family algorithms (TEA, XTEA, XTEA1, XTEA2, XTEA3, Raiden)
 
    - Standard and modified Vigener algorithm
 
@@ -143,6 +143,7 @@ ___
 
 
 ##### Implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given as examples of algorithms.
+
 
 
 
