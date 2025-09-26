@@ -84,58 +84,58 @@ ___
 
 - Algorithms for working with numeric data and converting numbers of various types
 
-   - Functions for converting integers to strings
+   - [Functions for converting integers to ASCII strings](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itoa )
 
-   - Functions for converting strings to integers
+   - [ASCII string conversion functions to integers](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/atoi )
 
-   - Functions for converting floating-point numbers to strings
+   - [Functions for converting floating-point numbers to ASCII strings](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/ftoa )
 
-   - Functions for converting strings to floating-point numbers
+   - [ASCII string conversion functions to floating point numbers](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/atof )
 
-   - Functions for converting integers to a string of binary representation
+   - [Functions for converting integers to an ASCII binary string представления](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itobina)
 
-   - Functions for converting integers to a string of hexadecimal representation
+   - [Functions for converting integers to an ASCII hexadecimal string представления](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itohexa)
 
-   - Functions for converting integers to binary-decimal representation and vice versa
+   - [Functions for converting integers to binary-decimal representation and vice versa](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/bcd )
 
-   - Functions for converting numbers to Gray's code and vice versa
+   - [Functions for converting numbers to Gray code and обратно](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/grayscode)
 
-   - Functions for working with fixed-point numbers
+   - [Functions for working with fixed-point numbers](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/fixpoint )
 
-   - Mathematical number conversion functions (extending the standard math.h library)
+   - [Mathematical number conversion functions (extending the standard math.h library)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/mathx )
 
-   - Functions for converting various physical quantities
+   - [Various physical conversion functions величин](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/valconvert)
 
 
 - Algorithms of pseudorandom number generators (RNG)
 
-   - Functions to make it easier to work with the standard rand() function
+   - [Functions to make it easier to work with the standard rand() function](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/random )
 
-   - A lightweight RNG based on the linear congruent method
+   - [Lightweight RNG based on linear congruence метода](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/fast%20random)
 
-   - A library for a pseudo-random number generator based on a mutable array (MAPRNG - Mutable Array Pseudo-Random Number Generator)
+   - [A library for a pseudo-random number generator based on a mutable array (MAPRNG - Mutable Array Pseudo-Random Number Generator)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/MAPRNG)
 
 
 - Cryptographic algorithms:
 
-   - TEA family algorithms (TEA, XTEA, XTEA1, XTEA2, XTEA3, Raiden)
+   - [TEA family algorithms (TEA, XTEA, XTEA1, XTEA2, XTEA3, Raiden)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Cryptography/TEA%20Series )
 
-   - Standard and modified Vigener algorithm
-
-
-- Digital data filtering algorithms
+   - [Standard and modified Vigener algorithm](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Cryptography/Vigenere )
 
 
-- Algorithms for converting RGB color space to HSV and vice versa
+- Algorithms for digital data filtering ([link](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Digital%20Filters ))
 
 
-- CRT algorithms for correcting the color emitted by LED sources
+- Algorithms for converting RGB color space to HSV and vice versa (for LED sources) ([link](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/LED%20Colors%20Transform ))
 
 
-- Checksum calculation algorithms (CRC)
+- CRT algorithms for correcting the color emitted by LED sources ([link](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/LED%20Gamma%20Correction ))
 
 
-- Implementation of the temperature calculation algorithm using an NTC thermistor
+- Checksum Calculation Algorithms (CRC) ([link](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/CRC%20Calculation ))
+
+
+- Implementation of the temperature calculation algorithm using an NTC thermistor ([link](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/NTC%20Thermometer ))
 
 
 "...and others.
@@ -143,6 +143,7 @@ ___
 
 
 ##### The implementation of test programs for AVR family microcontrollers (avr-gcc compiler) is given as examples of algorithms.
+
 
 
 
