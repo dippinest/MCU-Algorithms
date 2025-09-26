@@ -6,6 +6,8 @@ ___
 
 #### Набор кросс-платформенных библиотек различных алгоритмов, оптимизированных под малые ресурсы микроконтроллеров и других компьютерных систем.
 
+___
+
 #### A set of cross-platform libraries of various algorithms optimized for small resources of microcontrollers and other computer systems.
 
 ___
@@ -143,6 +145,7 @@ ___
 
 
 ##### The implementation of test programs for AVR family microcontrollers (avr-gcc compiler) is given as examples of algorithms.
+
 
 
 
