@@ -28,9 +28,9 @@ ___
 
 - Криптографические алгоритмы:
 
--- Алгоритмы семейства TEA
+   - Алгоритмы семейства TEA
 
--- Стандартный и модифицированный алгоритм Виженера
+   - Стандартный и модифицированный алгоритм Виженера
 
 
 - ...и другие.
@@ -56,6 +56,7 @@ ___
 - ...etc.
 
 ##### As examples of the algorhithms, the implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given.
+
 
 
 
