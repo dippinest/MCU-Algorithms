@@ -80,6 +80,7 @@ ___
 
 ___
 ___
+___
 
 #### Among them:
 
@@ -142,6 +143,7 @@ ___
 ___
 
 ##### The implementation of test programs for AVR family microcontrollers (avr-gcc compiler) is given as examples of algorithms.
+
 
 
 
