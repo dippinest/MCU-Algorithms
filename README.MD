@@ -12,7 +12,7 @@ ___
 
 ___
 
-<img src="/resources/logo.png" alt="Algorithm logo"/>
+<img src="/resources/lib_logo.png" alt="Algorithm logo"/>
 
 ___
 
@@ -145,6 +145,7 @@ ___
 
 
 ##### The implementation of test programs for AVR family microcontrollers (avr-gcc compiler) is given as examples of algorithms.
+
 
 
 
