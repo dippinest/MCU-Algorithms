@@ -57,19 +57,19 @@ ___
    - [Стандартный и модифицированный алгоритм Виженера](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Cryptography/Vigenere)
 
 
-- [Алгоритмы цифровой фильтрации данных](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Digital%20Filters)
+- Алгоритмы цифровой фильтрации данных ([ссылка](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Digital%20Filters))
 
 
-- [Алгоритмы преобразования цветового пространства RGB в HSV и обратно (для LED источников)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/LED%20Colors%20Transform)
+- Алгоритмы преобразования цветового пространства RGB в HSV и обратно (для LED источников)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/LED%20Colors%20Transform)
 
 
-- [Алгоритмы CRT коррекции цвета, излучаемый светодиодными источниками](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/LED%20Gamma%20Correction)
+- Алгоритмы CRT коррекции цвета, излучаемый светодиодными источниками ([ссылка](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/LED%20Gamma%20Correction)
 
 
-- [Алгоритмы вычисления контрольной суммы (CRC)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/CRC%20Calculation)
+- Алгоритмы вычисления контрольной суммы (CRC) ([ссылка](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/CRC%20Calculation)
 
 
-- [Реализация алгоритма расчета температуры с помощью NTC терморезистора](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/NTC%20Thermometer)
+- Реализация алгоритма расчета температуры с помощью NTC терморезистора ([ссылка](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/NTC%20Thermometer)
 
 
 - ...и другие.
@@ -143,6 +143,7 @@ ___
 
 
 ##### The implementation of test programs for AVR family microcontrollers (avr-gcc compiler) is given as examples of algorithms.
+
 
 
 
