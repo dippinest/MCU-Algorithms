@@ -76,7 +76,7 @@ ___
 
 
 
-##### В качестве примеров алгоритмов приведены реализации тестовых программ для микроконтроллеров AVR (компилятор avr-gcc).
+##### В качестве примеров алгоритмов приведены реализации тестовых программ для микроконтроллеров семейства AVR (компилятор avr-gcc).
 
 ___
 
@@ -142,7 +142,8 @@ ___
 
 
 
-##### Implementations of test programs for AVR microcontrollers (avr-gcc compiler) are given as examples of algorithms.
+##### The implementation of test programs for AVR family microcontrollers (avr-gcc compiler) is given as examples of algorithms.
+
 
 
 
