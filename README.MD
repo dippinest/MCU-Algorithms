@@ -86,34 +86,34 @@ ___
 
 - Algorithms for working with numeric data and converting numbers of various types
 
-   - [Functions for converting integers to ASCII strings](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itoa )
+   - [Functions for converting integers to ASCII string](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itoa )
 
    - [ASCII string conversion functions to integers](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/atoi )
 
-   - [Functions for converting floating-point numbers to ASCII strings](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/ftoa )
+   - [Functions for converting floating-point numbers to ASCII string](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/ftoa )
 
    - [ASCII string conversion functions to floating point numbers](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/atof )
 
-   - [Functions for converting integers to an ASCII binary string представления](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itobina)
+   - [Functions for converting integers to ASCII string binary representation](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itobina)
 
-   - [Functions for converting integers to an ASCII hexadecimal string представления](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itohexa)
+   - [Functions for converting integers to an ASCII hexadecimal string representation](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/itohexa)
 
    - [Functions for converting integers to binary-decimal representation and vice versa](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/bcd )
 
-   - [Functions for converting numbers to Gray code and обратно](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/grayscode)
+   - [Functions for converting numbers to Gray's code and vice versa](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/grayscode)
 
    - [Functions for working with fixed-point numbers](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/fixpoint )
 
    - [Mathematical number conversion functions (extending the standard math.h library)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/mathx )
 
-   - [Various physical conversion functions величин](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/valconvert)
+   - [Various physical conversion functions](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/Data%20Conversion/valconvert)
 
 
 - Algorithms of pseudorandom number generators (RNG)
 
    - [Functions to make it easier to work with the standard rand() function](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/random )
 
-   - [Lightweight RNG based on linear congruence метода](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/fast%20random)
+   - [A lightweight RNG based on the linear congruent method](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/fast%20random)
 
    - [A library for a pseudo-random number generator based on a mutable array (MAPRNG - Mutable Array Pseudo-Random Number Generator)](https://github.com/dippinest/MCU-Algorithms/tree/main/Libraries/PRNG%20Algorithms/MAPRNG)
 
@@ -143,6 +143,7 @@ ___
 ___
 
 ##### The implementation of test programs for AVR family microcontrollers (avr-gcc compiler) is given as examples of algorithms.
+
 
 
 
